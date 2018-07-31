@@ -1,7 +1,78 @@
-<!DOCTYPE html>
 <html>
-</body>
-<h1>Hello World!</h1>
-<p>Hosted on Github Pages</p>
+<head>
+	<link rel="stylesheet" href="animate.css" />
+<style>
+li {
+	float: left;
+}
+
+.name, .title, .description{
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+.social {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.my_icons {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	width: 20px;
+	height: 20px;
+}
+	
+</style>
+
+<script src = "wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+</head>
+<body style = "background-color:gray">
+	<div class="container fadeInDown animated">
+		<div class = "profile-pic">
+			<img src = "./img/profilepic.jpg" alt="Ryans Pic" style="width: 128px; height: 128px;">
+		</div>
+		
+		<div class = "name">
+			<h1>Ryan Moreno</h1>
+		</div>
+		
+		<div class = "title">
+			<h2>IT Specialist</h2>
+		</div>
+		
+		<div class = "container">
+			<div class= "description">
+				<p> I am a creative mind who loves to learn programming and automation.
+				I maintain a healthy balance between functionality and visual impact in all my work.
+				I carefully organize all designing elements on the page to make it 
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "social bounce animated">
+		<ul style="list-style-type: none; text-align: center;" >
+			<li><a href="#twitter"><img class = "my_icons" src="./img/twitter.png"></a></li>
+			<li><a href="#github"><img class = "my_icons" src="./img/github.png"></a></li>
+			<li><a href="#linkedin"><img class = "my_icons" src="./img/linkedin.png"></a></li>
+		</ul>
+	</div>
+			
 </body>
 </html>
