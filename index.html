@@ -1,78 +1,110 @@
 <html>
+
 <head>
-	<link rel="stylesheet" href="animate.css" />
 <style>
-li {
-	float: left;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+main{
+  height: 100vh;
+  background: url('./img/sunrise.jpg') fixed no-repeat;
+  background-size: cover;
+}
+#container{
+  width: 350px;
+  height: 500px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -250px;
+  border-radius: 8px;
+}
+#container:before{
+  width: 400px;
+  height: 550px;
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);
+}
+form img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+form{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+input{
+  background: 0;
+  width: 200px;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255,255,255, 0.3);
+  margin: 20px 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(255,255,255, 0.8);
+}
+input[type="submit"]{
+  border: 0;
+  border-radius: 8px;
+  padding-bottom: 0;
+  height: 60px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+input[type="submit"]:hover{
+  background: gray;
+}
+span a{
+  color: rgba(255,255,255, 0.8);
 }
 
-.name, .title, .description{
-	text-align: center;
-}
-
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.container {
-	padding-top: 50px;
-}
-
-.social {
+h2 {
 	padding-top: 20px;
-	text-align: center;
 }
 
-.my_icons {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 20px;
-	width: 20px;
-	height: 20px;
+h3 {
+	padding-top: 10px;
 }
-	
+
+</style>
 </style>
 
-<script src = "wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
-
-</head>
-<body style = "background-color:gray">
-	<div class="container fadeInDown animated">
-		<div class = "profile-pic">
-			<img src = "./img/profilepic.jpg" alt="Ryans Pic" style="width: 128px; height: 128px;">
-		</div>
-		
-		<div class = "name">
-			<h1>Ryan Moreno</h1>
-		</div>
-		
-		<div class = "title">
-			<h2>IT Specialist</h2>
-		</div>
-		
-		<div class = "container">
-			<div class= "description">
-				<p> I am a creative mind who loves to learn programming and automation.
-				I maintain a healthy balance between functionality and visual impact in all my work.
-				I carefully organize all designing elements on the page to make it 
-				</p>
-			</div>
-		</div>
-	</div>
-	
-	<div class = "social bounce animated">
-		<ul style="list-style-type: none; text-align: center;" >
-			<li><a href="#twitter"><img class = "my_icons" src="./img/twitter.png"></a></li>
-			<li><a href="#github"><img class = "my_icons" src="./img/github.png"></a></li>
-			<li><a href="#linkedin"><img class = "my_icons" src="./img/linkedin.png"></a></li>
-		</ul>
-	</div>
-			
+<body>
+<main>
+<div id="container">
+  <form action="">
+    <img src="./img/shade.jpg"><br>
+	<h3>Ryan Moreno (Ry)<h3>
+	<h4>IT Specialist<h4>
+	<input type="submit" value="Contact me!"><br>
+<!--
+    <input type="text" value="@AmJustSam"><br>
+    <input type="password"><br>
+    <input type="submit" value="SIGN IN"><br>
+    <span><a href="#">Forgot Password?</a></span>
+-->
+  </form>
+</div>
+</main>
 </body>
 </html>
