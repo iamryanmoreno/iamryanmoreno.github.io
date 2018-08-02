@@ -1,0 +1,223 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="./animate.css" />
+<style>
+main{
+  height: 100vh;
+  background: url('./img/sunrise.JPG') fixed no-repeat;
+  background-size: cover;
+}
+
+#welcome{
+  width: 1000px;
+  height: 1000px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 10%;
+}
+
+
+#container{
+  width: 350px;
+  height: 500px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 80%;
+  margin-left: -175px;
+  margin-top: -250px;
+  border-radius: 8px;
+}
+#container:before{
+  width: 400px;
+  height: 550px;
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);
+}
+form img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+form{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+input{
+  background: 0;
+  width: 200px;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255,255,255, 0.3);
+  margin: 20px 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(255,255,255, 0.8);
+}
+input[type="submit"]{
+  border: 0;
+  border-radius: 8px;
+  padding-bottom: 0;
+  height: 60px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+input[type="submit"]:hover{
+  background: gray;
+}
+span a{
+  color: rgba(255,255,255, 0.8);
+}
+
+h2 {
+	padding-top: 20px;
+}
+
+h3 {
+	padding-top: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-right: 0;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	padding-right: 10px;
+}
+
+#img_icon1 {
+	height: 40px;
+	width: 40px;
+	border-radius: 0;
+}
+
+#img_icon1:hover{
+	src=: "./img/twitter_hover.png";
+}
+
+#img_icon {
+	height: 40px;
+	width: 40px;
+	border-radius: 0;
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+            .fly-in-text {
+                list-style: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .fly-in-text li {
+                display: inline-block;
+                margin-right: 50px;
+                font-family: Open Sans, Arial;
+                font-weight: 300;
+                font-size: 4em;
+                color: #fff;
+                opacity: 1;
+                transition: all 2.5s ease;
+            }
+            .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .fly-in-text.hidden li {
+                opacity: 0;
+            }
+            .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+			
+			
+</style>
+
+<body>
+<main>
+<div>
+<div id="welcome">
+	        <ul class="fly-in-text hidden">
+            <li>W</li>
+            <li>E</li>
+            <li>L</li>
+            <li>C</li>
+            <li>O</li>
+            <li>M</li>
+            <li>E</li>
+        </ul>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })();
+            
+        </script>
+</div>
+<div id="container">
+  <form action="">
+    <img src="./img/shade.JPG" class = "fadeInDown animated"><br>
+	<h3 class = "fadeInDown animated">Ryan Moreno (Ry)<h3>
+	<h4 class = "fadeInDown animated">IT Specialist<h4>
+	<input type="submit" value="Contact me!" class = "tada animated"><br>
+	
+
+<!--
+    <input type="text" value="@AmJustSam"><br>
+    <input type="password"><br>
+    <input type="submit" value="SIGN IN"><br>
+    <span><a href="#">Forgot Password?</a></span>
+-->
+  </form>
+  <div>
+	<ul>
+		<li><a href ="https://twitter.com/iamryanmoreno"><img id = "img_icon1" src="./img/twitter.png"></a></li>
+		<li><a href ="https://www.linkedin.com/in/ryan-moreno-71714b73/"><img id = "img_icon" src="./img/linkedin.png"></a></li>
+		<li><a href ="https://github.com/iamryanmoreno"><img id = "img_icon" src="./img/github.png"></a></li>
+	</ul>
+  </div>
+</div>
+</div>
+
+	
+</main>
+</body>
+</html>
