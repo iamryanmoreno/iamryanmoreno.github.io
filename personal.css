@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+#particles-js{
+	height: 100%;
+}
+
+main{
+  height: 100vh;
+  //background: url('./img/sunrise.JPG') fixed no-repeat;
+  background: linear-gradient(to bottom right, black, darkblue);
+  background-size: cover;
+}
+
+#welcome{
+  width: 1000px;
+  height: 1000px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 10%;
+}
+
+
+#container{
+  width: 350px;
+  height: 500px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 80%;
+  margin-left: -175px;
+  margin-top: -250px;
+  border-radius: 8px;
+}
+#container:before{
+  width: 400px;
+  height: 550px;
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);
+}
+form img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+form{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+input{
+  background: 0;
+  width: 200px;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255,255,255, 0.3);
+  margin: 20px 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(255,255,255, 0.8);
+}
+input[type="submit"]{
+  border: 0;
+  border-radius: 8px;
+  padding-bottom: 0;
+  height: 60px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+input[type="submit"]:hover{
+  background: gray;
+}
+span a{
+  color: rgba(255,255,255, 0.8);
+}
+
+h2 {
+	padding-top: 20px;
+}
+
+h3 {
+	padding-top: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding-right: 0;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	padding-right: 10px;
+}
+
+#img_icon1 {
+	height: 40px;
+	width: 40px;
+	border-radius: 0;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#img_icon1:hover{
+	//src=: "./img/twitter_hover.png";
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+#profile {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+#profile:hover{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+#img_icon {
+	height: 40px;
+	width: 40px;
+	border-radius: 0;
+}
+
+#img_icon {
+	height: 40px;
+	width: 40px;
+	border-radius: 0;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}			
