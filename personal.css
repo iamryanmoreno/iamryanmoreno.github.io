@@ -31,7 +31,7 @@ main{
 
 #container{
   width: 350px;
-  height: auto;
+  height: 500px;
   background: inherit;
   position: absolute;
   overflow: hidden;
