@@ -1,166 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/*
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-*/
-
-.tab {
-    float: left;
-    background-color: #f1f1f1;
-    width: 20%;
-    //height: 100px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    //padding: 22px 16px;
-	padding: 8px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    float: left;
-    padding: 0px 20px;
-    width: 60%;
-    //height: 300px;
-	overflow: hidden;
-}
-
-/*
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-
-*/
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+	<link rel="stylesheet" href="./animate.css"/>
+	<link rel="stylesheet" href="./personal.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="font-family:Verdana;">
 
-<div style="background-color:#f1f1f1;padding:15px;">
-  <h1>Hello, I'm Ryan!</h1>
-</div>
-
-<div style="overflow:auto">
-  <div class="tab">
-	  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-	  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-	  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-  </div>
-  
-	<div id="London" class="tabcontent">
-	  <h3>London</h3>
-	  <p>London is the capital city of England.</p>
-	  <img src="img_5terre.jpg" style="width:100%">
+<body>
+	<div id="particles-js"></div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	
+	<div id = "head">
+		<h1 class = "font_courier">Hello World, I'm Ryan!</h1>
 	</div>
+	
+	<div style="overflow:auto">
+		  <div class="tab">
+			  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+			  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+			  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+			  <button class="tablinks" onclick="openCity(event, 'Experience')">Contact</button>
+			  
+		  </div>
+		  
+			<div id="Home" class="tabcontent">
+			  <ul class="fly-in-text hidden">
+				<li>W</li>
+				<li>E</li>
+				<li>L</li>
+				<li>C</li>
+				<li>O</li>
+				<li>M</li>
+				<li>E</li>
+				</ul>
+				<script type="text/javascript">
+            
+					$(function() {
+						
+						setTimeout(function() {
+							$('.fly-in-text').removeClass('hidden');
+						}, 500);
+						
+					})();
+					
+				</script>
+			</div>
 
-	<div id="Paris" class="tabcontent">
-	  <h3>Paris</h3>
-	  <p>Paris is the capital of France.</p> 
-	  <img src="img_5terre.jpg" style="width:100%">
-	</div>
+			<div id="Education" class="tabcontent">
+			  <h3>Education</h3>
+			  <p>Paris is the capital of France.</p> 
+			  <img src="img_5terre.jpg" style="width:100%">
+			</div>
 
-	<div id="Tokyo" class="tabcontent">
-	  <h3>Tokyo</h3>
-	  <p>Tokyo is the capital of Japan.</p>
-	  <img src="img_5terre.jpg" style="width:100%">
-	</div>
+			<div id="Projects" class="tabcontent">
+			  <h3>Projects</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			  <img src="img_5terre.jpg" style="width:100%">
+			</div>
+			
+			<div id="Experience" class="tabcontent">
+			  <h3>Experience</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			  <img src="img_5terre.jpg" style="width:100%">
+			</div>
 
-  <div class="right">
-    <h2>What?</h2>
-    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
-    <h2>Where?</h2>
-    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
-    <h2>Price?</h2>
-    <p>The Walk is free!</p>
-  </div>
-</div>
+		  <div class="right">
+			<form class "fadeInDown animated">
+			<img id = "profile" src="./img/shade.JPG"><br>
+			<h3 style="color: white;">Ryan Moreno (Ry)<h3>
+			<h4 style="color: white;">IT Specialist<h4>
+			</form>
+		  </div>
+		</div>
 
-
-<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">Copyright Ryan Moreno 2018 reserved.</div>
-
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+	<div id = "footer"> &#169 2018. All rights reserved.</div>
 
 
+	<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
 </body>
 </html>
