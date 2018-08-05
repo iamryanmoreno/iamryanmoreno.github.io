@@ -22,26 +22,26 @@ main {
 }
 
 .tab {
+	
     float: left;
-    background-color: #f1f1f1;
+    background-color: #2F4F4F;
     width: 20%;
-    //height: 100px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
+	width: 45vh;
     display: block;
     background-color: #2F4F4F;
     color: white;
-    //padding: 22px 16px;
 	padding: 8px;
-    width: 100%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
+	
 }
 
 /* Change background color of buttons on hover */
@@ -232,3 +232,23 @@ body, html {
 .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
 
 
+@media screen and (max-width: 700px) {
+  .tab {
+    width: 100%;
+    height: auto;
+    position: relative;
+	background: #2F4F4F;
+  }
+  .tab button {
+	  float: left;
+	  width: 20vh;
+  }
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .tab button {
+    text-align: center;
+    float: none;
+  }
+}
