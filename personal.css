@@ -206,10 +206,10 @@ body, html {
 
 .fly-in-text li {
 	display: inline-block;
-	margin-right: 45px;
+	margin-right: 2rem;
 	font-family: Open Sans, Arial;
 	font-weight: 300;
-	font-size: 4em;
+	font-size: 4rem;
 	color: #fff;
 	opacity: 1;
 	transition: all 2.5s ease;
@@ -230,3 +230,5 @@ body, html {
 .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
 .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
 .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+
+
