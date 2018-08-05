@@ -31,7 +31,7 @@ main{
 
 #container{
   width: 350px;
-  height: 500px;
+  height: auto;
   background: inherit;
   position: absolute;
   overflow: hidden;
@@ -40,6 +40,7 @@ main{
   margin-left: -175px;
   margin-top: -250px;
   border-radius: 8px;
+  max-width: 100%;
 }
 #container:before{
   width: 400px;
