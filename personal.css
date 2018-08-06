@@ -207,6 +207,10 @@ form{
   .menu, .main, .left,.right {
     width: 100%;
   }
+.left {
+	padding-bottom: 10%;
+}
+
 }
 
 #footer {
