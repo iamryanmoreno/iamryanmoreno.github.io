@@ -22,15 +22,25 @@ main {
 }
 
 .tab {
-	
     float: left;
     background-color: #2F4F4F;
     width: 20%;
+	
+	position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-	width: 45vh;
+	
+	width: 50vh;
     display: block;
     background-color: #2F4F4F;
     color: white;
@@ -42,17 +52,45 @@ main {
     transition: 0.3s;
     font-size: 17px;
 	
+
+	
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
+	left: 0;
     background-color: #ddd;
+	/*width: 100%;*/
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
     background-color: #708090;
+	width: 100%;
 }
+
+#Home{
+	top: 20px;
+    background-color: #4CAF50;
+}
+
+#Education{
+	top: 80px;
+    background-color: #2196F3; /* Blue */
+}
+
+#Projects{
+	top: 140px;
+    background-color: #f44336; /* Red */
+}
+
+#Contact{
+	top: 200px;
+    background-color: #555 /* Light Black */
+}
+
+
+
 
 /* Style the tab content */
 .tabcontent {
@@ -74,8 +112,21 @@ main {
 
 */
 
+.left{
+	float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
 
 .right {
+	float: left;
+    padding: 20px;
+    width: 70%;
+	color: white;
+    height: 300px;
+	/*
 	background: inherit;
 	overflow: hidden;
 	border-radius: 8px;
@@ -83,6 +134,7 @@ main {
 	width: 20%;
 	padding: 10px 15px;
 	margin-top: 7px;
+	*/
 	
 /*
   background-color: #2F4F4F;
@@ -238,18 +290,64 @@ body, html {
     height: auto;
     position: relative;
 	background: #2F4F4F;
+	padding: 0;
   }
   .tab button {
 	  float: left;
-	  width: 20vh;
+	  width: 100%;
   }
   div.content {margin-left: 0;}
 }
 
 @media screen and (max-width: 400px) {
+	.tab {
+    width: 100%;
+    height: auto;
+    position: relative;
+	background: #2F4F4F;
+	padding: 0;
+  }
+  
   .tab button {
     text-align: center;
+	width: 100%;
     float: none;
   }
-  .font_courier { height: 20vh}
+}
+
+
+#mySidenav a {
+	position: fixed;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	left: 0;
+}
+
+#about {
+    top: 30%;
+    background-color: #708090;
+}
+
+#blog {
+    top: 40%;
+    background-color: #708090;
+}
+
+#projects {
+    top: 50%;
+    background-color: #708090;
+}
+
+#contact {
+    top: 60%;
+    background-color: #708090
 }
