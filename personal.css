@@ -343,6 +343,10 @@ body, html {
   #head {
 	  font-size: 10px;
   }
+	
+.left{
+	padding-bottom: 50px;
+}
   
 }
 
