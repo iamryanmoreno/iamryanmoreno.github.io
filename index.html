@@ -18,10 +18,10 @@
 	</div>
 	
 <div id="mySidenav">
-	<a href="#" id="about">About</a>
-	<a href="#" id="blog">Blog</a>
-	<a href="#" id="projects">Projects</a>
-	<a href="#" id="contact">Contact</a>
+	<a href="#" class="tablinks, nav_home" id = "defaultOpen" onclick="openCity(event, 'Home')">Home</a>
+	<a href="#" class="tablinks, nav_education" onclick="openCity(event, 'Education')">Education</a>
+	<a href="#" class="tablinks, nav_projects" onclick="openCity(event, 'Projects')">Projects</a>
+	<a href="#" class="tablinks, nav_experience" onclick="openCity(event, 'Experience')">Experience</a>
 </div>
 	
 	<div class = "left">
@@ -30,13 +30,31 @@
 	<p>Engineer & Software Developer</p>
 	<p>iamryanmoreno@gmail.com</p>
 	</div>
-	/*
-	<div id="Education" class="right">
-		<h3>Education</h3>
-		<p>Paris is the capital of France.</p>
+	
+	
+	<div id="Home" class="right">
+		<h3>Home</h3>
+		<p>This is Home.</p>
 		<img src="img_5terre.jpg" style="width:100%">
 	</div>
 	
+	<div id="Education" class="right">
+		<h3>Education</h3>
+		<p>Paris is the capital of France.</p> 
+	<img src="img_5terre.jpg" style="width:100%">
+	</div>
+	
+	<div id="Projects" class="right">
+		<h3>Projects</h3>
+		<p>Tokyo is the capital of Japan.</p>
+		<img src="img_5terre.jpg" style="width:100%">
+	</div>
+	
+	<div id="Experience" class="right">
+		<h3>Experience</h3>
+		<p>Tokyo is the capital of Japan.</p>
+		<img src="img_5terre.jpg" style="width:100%">
+	</div>
 	
 	<!--
 	<div style="overflow:auto">
@@ -106,10 +124,10 @@
 
 	<script>
 	function openCity(evt, cityName) {
-		var i, tabcontent, tablinks;
-		tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
+		var i, right, tablinks;
+		right = document.getElementsByClassName("right");
+		for (i = 0; i < right.length; i++) {
+			right[i].style.display = "none";
 		}
 		tablinks = document.getElementsByClassName("tablinks");
 		for (i = 0; i < tablinks.length; i++) {
