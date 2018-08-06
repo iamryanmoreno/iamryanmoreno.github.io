@@ -201,18 +201,12 @@ form{
   .right, .left {
     width: 100%;
   }
-.right {
-	  padding-top: 10%
-}
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .left,.right {
     width: 100%;
   }
-  .right {
-	  padding-top: 10%
-}
 }
 
 #footer {
@@ -344,10 +338,10 @@ body, html {
 
 #mySidenav a {
 	position: fixed;
-	left: -80px;
+	left: -110px;
 	transition: 0.3s;
 	padding: 15px;
-	width: 100px;
+	width: 150px;
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
@@ -358,22 +352,22 @@ body, html {
 	left: 0;
 }
 
-#about {
+.nav_home {
     top: 30%;
     background-color: #708090;
 }
 
-#blog {
+.nav_education {
     top: 40%;
     background-color: #708090;
 }
 
-#projects {
+.nav_projects {
     top: 50%;
     background-color: #708090;
 }
 
-#contact {
+.nav_experience {
     top: 60%;
     background-color: #708090
 }
