@@ -318,33 +318,31 @@ ul {
 /*end for timeline*/
 
 /* for skills integration */
-.chart-container .pr-chart-ctrl {
-    display:block; 
-    float:left; 
-    width:25%;
+
+.container_skills{
+	width: 100%;
+	background-color: #ddd;
 }
 
-.chart-container .pr-chart-ctrl .pr-chart {
-    display:block; position:relative; width:100%; margin:0 0 20px 0; text-align:center; margin-top: 30px; 
+.skills {
+	text-align: right;
+	padding-right: 20px;
+	line-height: 40px;
+	color: white;
 }
-.chart-container .pr-chart-ctrl .pr-chart canvas {
-display:block; margin:0 auto; padding:0; vertical-align:center; background: inherit;
-}
-.chart-container .pr-chart-ctrl .pr-chart i {
-    position:absolute; top:0; left:0; width:100%; height:200px; line-height:200px; font-size:48px; font-style:normal; color: black;
-}
-.chart-container .pr-chart-ctrl p{margin:0; padding:40px; text-transform:uppercase; color:green;}
-    
-@media screen and (max-width:500px) {
-    .chart-container .pr-chart-ctrl {
-        width:100%; margin-bottom:50px;
-    } 
-}
-@media screen and (min-width:501px) and (max-width:900px) {
-    .chart-container .pr-chart-ctrl {
-        width:50%; margin-bottom:50px;
-    } 
-    }
+
+.java {width: 90%; background-color: #0000FF; color: black;}
+.python {width: 80%; background-color: #008000; color: black;}
+.html {width: 80%; background-color: #800000; color: black;}
+.css {width: 65%; background-color: #FF00FF; color: black;}
+.mysql {width: 80%; background-color: #00FF00; color: black;}
+.json {width: 65%; background-color: #00FFFF; color: black;}
+.kivy {width: 70%; background-color: #808000; color: black;}
+.bash {width: 50%; background-color: #f44336; color: black;}
+.cisco {width: 90%; background-color: #FF0000; color: black;}
+.linux {width: 80%; background-color: #C0C0C0; color: black;}
+
+
 /*end skills*/
 
 @media screen and (max-width: 700px){
