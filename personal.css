@@ -183,6 +183,169 @@ ul {
 }
 
 
+/*Timeline*/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+	padding-top: 30px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #FF9F55;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Place the container to the left */
+.left_container {
+	left: 0;
+}
+
+/* Place the container to the right */
+.right_container{
+	left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left_container::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right_container::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right_container::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+	color: black;
+}
+
+.custom_font{
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left_container::after, .right_container::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right_container {
+    left: 0%;
+  }
+}
+
+/*end for timeline*/
+
+/* for skills integration */
+.chart-container .pr-chart-ctrl {
+    display:block; 
+    float:left; 
+    width:25%;
+}
+
+.chart-container .pr-chart-ctrl .pr-chart {
+    display:block; position:relative; width:100%; margin:0 0 20px 0; text-align:center; margin-top: 30px; 
+}
+.chart-container .pr-chart-ctrl .pr-chart canvas {
+display:block; margin:0 auto; padding:0; vertical-align:center; background: inherit;
+}
+.chart-container .pr-chart-ctrl .pr-chart i {
+    position:absolute; top:0; left:0; width:100%; height:200px; line-height:200px; font-size:48px; font-style:normal; color: black;
+}
+.chart-container .pr-chart-ctrl p{margin:0; padding:40px; text-transform:uppercase; color:green;}
+    
+@media screen and (max-width:500px) {
+    .chart-container .pr-chart-ctrl {
+        width:100%; margin-bottom:50px;
+    } 
+}
+@media screen and (min-width:501px) and (max-width:900px) {
+    .chart-container .pr-chart-ctrl {
+        width:50%; margin-bottom:50px;
+    } 
+    }
+/*end skills*/
 
 @media screen and (max-width: 700px){
 	.right{
