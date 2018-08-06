@@ -377,7 +377,7 @@ ul {
   }
   div.content {margin-left: 0;}
   
-  .right {
+  .left {
 	padding-bottom: 50px;
   }
 }
@@ -404,7 +404,7 @@ ul {
   #head {
 	  font-size: 10px;
   }
-  .right {
+  .left {
 	padding-bottom: 50px;
   }
 }
@@ -420,7 +420,7 @@ ul {
   .right, .left {
     width: 100%;
   }
-  .right {
+  .left {
 	padding-bottom: 50px;
   }
 }
@@ -431,7 +431,7 @@ ul {
   .menu, .main, .left,.right {
     width: 100%;
   }
-.right {
+.left {
 	padding-bottom: 50px;
 }
 
