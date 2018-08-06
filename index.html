@@ -1,151 +1,425 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="./animate.css"/>
-	<link rel="stylesheet" href="./personal.css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-</head>
+html, body {
+	height: 100vh;
+}
 
-<body style = "font-family: verdana;">
-	<div id="particles-js"></div>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
-	
-	<div id = "head">
-		<h1>Hello World, I'm Ryan!</h1>
-	</div>
-	
-<div id="mySidenav">
-	<a href="#" class="tablinks, nav_home" id = "defaultOpen" onclick="openCity(event, 'Home')">Home</a>
-	<a href="#" class="tablinks, nav_education" onclick="openCity(event, 'Education')">Education</a>
-	<a href="#" class="tablinks, nav_projects" onclick="openCity(event, 'Projects')">Projects</a>
-	<a href="#" class="tablinks, nav_experience" onclick="openCity(event, 'Experience')">Experience</a>
-</div>
-	
-	<div class = "left">
-	<img src = "img/shade.JPG" style = "border-radius: 100%;width: 50%; height: 70%; background-color: inherit;" id = "profile" class = "fadeInDown animated"><br><br>
-	<h2 class = "fadeInDown animated">Ryan Moreno</h2>
-	<p class = "fadeInDown animated">Engineer & Software Developer</p>
-	<p class = "fadeInDown animated">iamryanmoreno@gmail.com</p>
-	<div style = "background-color:inherit;text-align:center; padding-top: 30px; ">
-		<a href ="https://www.linkedin.com/in/ryan-moreno-71714b73/" target = "_blank"><img id = "img_icon" src="./img/linkedin.png" alt = "LinkedIn" class = "tada animated"></a>
-		<a href ="https://github.com/iamryanmoreno" target = "_blank"><img id = "img_icon" src="./img/github.png" alt = "Github" class = "tada animated"></a>
-		<a href ="https://twitter.com/iamryanmoreno" target = "_blank"><img id = "img_icon" src="./img/twitter.png" alt = "Twitter" class = "tada animated"></a>
-		<a href ="https://www.instagram.com/iamryanmoreno/" target = "_blank"><img id = "img_icon" src="./img/instagram.png" alt = "Github" class = "tada animated"></a>
-		
-	</div>
-	</div>
-	
-	
-	<div id="Home" class="right">
-		<h3>Home</h3>
-		<p>This is Home.</p>
-		<img src="img_5terre.jpg" style="width:100%">
-	</div>
-	
-	<div id="Education" class="right">
-		<h3>Education</h3>
-		<p>Paris is the capital of France.</p> 
-	<img src="img_5terre.jpg" style="width:100%">
-	</div>
-	
-	<div id="Projects" class="right">
-		<h3>Projects</h3>
-		<p>Tokyo is the capital of Japan.</p>
-		<img src="img_5terre.jpg" style="width:100%">
-	</div>
-	
-	<div id="Experience" class="right">
-		<h3>Experience</h3>
-		<p>Tokyo is the capital of Japan.</p>
-		<img src="img_5terre.jpg" style="width:100%">
-	</div>
-	
-	<!--
-	<div style="overflow:auto">
-		  <div class="tab">
-			  <button class="Home" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
-			  <button class="Education" onclick="openCity(event, 'Education')">Education</button>
-			  <button class="Projects" onclick="openCity(event, 'Projects')">Projects</button>
-			  <button class="Contact" onclick="openCity(event, 'Experience')">Contact</button>
-			  
-		  </div>
-		  
-			<div id="Home" class="tabcontent">
-			  <ul class="fly-in-text hidden">
-				<li>W</li>
-				<li>E</li>
-				<li>L</li>
-				<li>C</li>
-				<li>O</li>
-				<li>M</li>
-				<li>E</li>
-				</ul>
-				<script type="text/javascript">
-            
-					$(function() {
-						
-						setTimeout(function() {
-							$('.fly-in-text').removeClass('hidden');
-						}, 500);
-						
-					})();
-					
-				</script>
-			</div>
-
-			<div id="Education" class="tabcontent">
-			  <h3>Education</h3>
-			  <p>Paris is the capital of France.</p> 
-			  <img src="img_5terre.jpg" style="width:100%">
-			</div>
-
-			<div id="Projects" class="tabcontent">
-			  <h3>Projects</h3>
-			  <p>Tokyo is the capital of Japan.</p>
-			  <img src="img_5terre.jpg" style="width:100%">
-			</div>
-			
-			<div id="Experience" class="tabcontent">
-			  <h3>Experience</h3>
-			  <p>Tokyo is the capital of Japan.</p>
-			  <img src="img_5terre.jpg" style="width:100%">
-			</div>
-
-		  <div class="right">
-			<form class "fadeInDown animated">
-			<img id = "profile" src="./img/shade.JPG"><br>
-			<h3 style="color: white;">Ryan Moreno (Ry)<h3>
-			<h4 style="color: white;">IT Specialist<h4>
-			</form>
-		  </div>
-		</div>
-		
-		
-		-->
-
-	<div id = "footer"> &#169 2018. All rights reserved.</div>
+main {
+	//background: linear-gradient(to right left, black, darkgray);
+}
 
 
-	<script>
-	function openCity(evt, cityName) {
-		var i, right, tablinks;
-		right = document.getElementsByClassName("right");
-		for (i = 0; i < right.length; i++) {
-			right[i].style.display = "none";
-		}
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		document.getElementById(cityName).style.display = "block";
-		evt.currentTarget.className += " active";
-	}
 
-	// Get the element with id="defaultOpen" and click on it
-	document.getElementById("defaultOpen").click();
-	</script>
-</body>
-</html>
+#head {
+	background-color: #2F4F4F;
+	color: #ffffff;
+	padding: 15px;
+	font-size: 20px;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+
+.tab {
+    float: left;
+    background-color: #2F4F4F;
+    width: 20%;
+	
+	position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	
+	width: 50vh;
+    display: block;
+    background-color: #2F4F4F;
+    color: white;
+	padding: 8px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+	
+
+	
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	left: 0;
+    background-color: #ddd;
+	/*width: 100%;*/
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #708090;
+	width: 100%;
+}
+
+#Home{
+	top: 20px;
+    /*background-color: #4CAF50;*/
+}
+
+#Education{
+	top: 80px;
+    /*background-color: #2196F3;  Blue */
+}
+
+#Projects{
+	top: 140px;
+    /*background-color: #f44336; /* Red */
+}
+
+#Contact{
+	top: 200px;
+    /*background-color: #555 /* Light Black */
+}
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 20px;
+    width: 60%;
+    //height: 300px;
+	overflow: hidden;
+	color: #ffffff;
+}
+
+/*
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+*/
+
+.left{
+	float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background:inherit;
+    padding: 40px;
+	text-align: center;
+	color: white;
+}
+
+.right{
+	float: left;
+    width: 70%;
+    height: 300px; /* only for demonstration, should be removed */
+    background:inherit;
+	padding: 60px 40px;
+	color: white;
+	background-color
+}
+/*
+.right {
+	float: left;
+    padding: 20px;
+    width: 70%;
+	color: white;
+    height: 300px;
+	/*
+	background: inherit;
+	overflow: hidden;
+	border-radius: 8px;
+	float: left;
+	width: 20%;
+	padding: 10px 15px;
+	margin-top: 7px;
+	*/
+	
+/*
+  background-color: #2F4F4F;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  color: #ffffff;
+  
+
+ 
+}
+
+.right:before{
+  content: " ";
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);
+}
+
+*/
+
+#profile {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+#profile:hover{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+form img{
+	width: 50%;
+	height: 50%;
+	border-radius: 100%;
+}
+
+form{
+	text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	box-sizing: 0;
+	background-color: #708090;
+	color: #FFFFFF;
+	text-align:center;
+	padding:10px;
+	margin-top:7px;
+	font-size:12px;
+}
+
+
+/* to show the canvas bounds and remove scrollbars caused by it, if applicable */
+canvas {
+    display:block;
+    //background: rgb(33,36,50);
+	background: linear-gradient(to bottom right, black, gray);
+    position: fixed;
+    z-index: -1;
+	border: 0;
+}
+
+main {
+    position: absolute;
+}
+
+body, html {
+    height: 100vh
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+/*Fly In Welcome*/
+
+.fly-in-text {
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text li {
+	display: inline-block;
+	margin-right: 2rem;
+	font-family: Open Sans, Arial;
+	font-weight: 300;
+	font-size: 4rem;
+	color: #fff;
+	opacity: 1;
+	transition: all 2.5s ease;
+}
+
+.fly-in-text li:last-child {
+	margin-right: 0;
+}
+
+.fly-in-text.hidden li {
+	opacity: 0;
+}
+
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+
+#mySidenav a {
+	position: fixed;
+	left: -120px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 160px;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 0 5px 5px 0;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+#mySidenav a:hover {
+	left: 0;
+}
+
+.nav_home {
+    top: 30%;
+}
+
+.nav_education {
+    top: 40%;
+}
+
+.nav_projects {
+    top: 50%;
+}
+
+.nav_experience {
+    top: 60%;
+}
+
+.nav_home, .nav_education, .nav_projects, .nav_experience{
+	background-color: #2F4F4F;
+	transition: 0.3s;
+}
+
+.nav_home:hover, .nav_education:hover, .nav_projects:hover, .nav_experience:hover{
+	background-color: white;
+	color: black;
+}
+
+.nav_home:active, .nav_education:active, .nav_projects:active, .nav_experience:active{
+	background-color: #ddd;
+}
+
+#img_icon {
+	height: 20%;
+	width: 20%;
+	border-radius: 0;
+}
+
+#img_icon {
+	height: 15%;
+	width: 15%;
+	border-radius: 0;
+	padding-left: 5%;
+}
+
+#img_icon:hover{
+	-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(0.5px);
+}
+
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding-right: 0;
+	padding-top: 30px;
+	overflow: hidden;
+	text-align: center;
+	top: 50%;
+	bottom: 50%;
+}
+
+.list_item {
+	float: left;
+	padding-right: 10px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .tab {
+    width: 100%;
+    height: auto;
+    position: relative;
+	background: #2F4F4F;
+	padding: 0;
+  }
+  .tab button {
+	  float: left;
+	  width: 100%;
+  }
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+	.tab {
+    width: 100%;
+    height: auto;
+    position: relative;
+	background: #2F4F4F;
+	padding: 0;
+  }
+  
+  .tab button {
+    text-align: center;
+	width: 100%;
+    float: none;
+  }
+  
+  .left, .right{
+	  width: 100%;
+  }
+  
+  #head {
+	  font-size: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right, .left {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .left,.right {
+    width: 100%;
+  }
+}
