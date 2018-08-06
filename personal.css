@@ -127,7 +127,7 @@ main {
     width: 70%;
     height: 300px; /* only for demonstration, should be removed */
     background:inherit;
-    padding: 40px;
+	padding: 60px 40px;
 	color: white;
 	background-color
 }
@@ -288,7 +288,6 @@ body, html {
 	width: 160px;
 	text-decoration: none;
 	font-size: 18px;
-	color: white;
 	border-radius: 0 5px 5px 0;
 	font-family: verdana;
 }
@@ -319,7 +318,8 @@ body, html {
 }
 
 .nav_home:hover, .nav_education:hover, .nav_projects:hover, .nav_experience:hover{
-	background-color: #708090;
+	background-color: white;
+	color: black;
 }
 
 .nav_home:active, .nav_education:active, .nav_projects:active, .nav_experience:active{
@@ -376,10 +376,6 @@ ul {
 	  width: 100%;
   }
   div.content {margin-left: 0;}
-  
-  .left {
-	padding-bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -404,9 +400,6 @@ ul {
   #head {
 	  font-size: 10px;
   }
-  .left {
-	padding-bottom: 50px;
-  }
 }
 
 
@@ -420,9 +413,6 @@ ul {
   .right, .left {
     width: 100%;
   }
-  .left {
-	padding-bottom: 50px;
-  }
 }
 
 
@@ -431,9 +421,4 @@ ul {
   .menu, .main, .left,.right {
     width: 100%;
   }
-.left {
-	padding-bottom: 50px;
-}
-
-
 }
