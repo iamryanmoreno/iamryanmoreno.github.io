@@ -319,6 +319,10 @@ body, html {
 	  width: 100%;
   }
   div.content {margin-left: 0;}
+	
+.left{
+	padding-bottom: 50px;
+}
 }
 
 @media screen and (max-width: 400px) {
