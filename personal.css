@@ -201,6 +201,9 @@ form{
   .right, .left {
     width: 100%;
   }
+.left {
+	padding-bottom: 50px;
+}
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -208,7 +211,7 @@ form{
     width: 100%;
   }
 .left {
-	padding-bottom: 10%;
+	padding-bottom: 50px;
 }
 
 }
