@@ -376,6 +376,10 @@ ul {
 	  width: 100%;
   }
   div.content {margin-left: 0;}
+  
+  .right {
+	padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -416,7 +420,12 @@ ul {
   .right, .left {
     width: 100%;
   }
+  .right {
+	padding-bottom: 50px;
+  }
 }
+
+
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .left,.right {
@@ -425,5 +434,6 @@ ul {
 .right {
 	padding-bottom: 50px;
 }
+
 
 }
