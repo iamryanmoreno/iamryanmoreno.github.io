@@ -129,7 +129,6 @@ main {
     background:inherit;
 	padding: 60px 40px;
 	color: white;
-	background-color
 }
 /*
 .right {
@@ -290,6 +289,7 @@ body, html {
 	font-size: 18px;
 	border-radius: 0 5px 5px 0;
 	font-family: verdana;
+	font-weight: bold;
 }
 
 #mySidenav a:hover {
@@ -376,6 +376,10 @@ ul {
 	  width: 100%;
   }
   div.content {margin-left: 0;}
+  .right{
+    padding: 100px 40px;
+  }
+  
 }
 
 @media screen and (max-width: 400px) {
@@ -400,6 +404,10 @@ ul {
   #head {
 	  font-size: 10px;
   }
+  .right{
+    padding: 100px 40px;
+  }
+  
 }
 
 
@@ -413,6 +421,10 @@ ul {
   .right, .left {
     width: 100%;
   }
+   .right{
+    padding: 100px 40px;
+  }
+  
 }
 
 
@@ -421,4 +433,8 @@ ul {
   .menu, .main, .left,.right {
     width: 100%;
   }
+  .right{
+    padding: 100px 40px;
+  }
+  
 }
