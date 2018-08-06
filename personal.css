@@ -201,12 +201,18 @@ form{
   .right, .left {
     width: 100%;
   }
+.right {
+	  padding-top: 10%
+}
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .left,.right {
     width: 100%;
   }
+  .right {
+	  padding-top: 10%
+}
 }
 
 #footer {
