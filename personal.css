@@ -112,6 +112,16 @@ canvas {
 	background-color: #ddd;
 }
 
+.center{
+	width: 80%;
+	padding: 100px;
+	background:inherit;
+	text-align: center;
+	color: white;
+	padding-right: 0px;
+	padding-left: 100px;
+}
+
 .left{
 	float: left;
 	width: 50%;
@@ -359,11 +369,11 @@ ul {
 	.left, .right{
 		width: 100%;
 	}
-	
+
 	#head {
 		font-size: 10px;
 	}
-	
+
 	.right{
 		padding: 100px 40px;
 	}
@@ -375,15 +385,15 @@ ul {
 		width: 80%;
 		padding: 0;
 	}
-	
+
 	.right, .left {
 		width: 100%;
 	}
-	
+
 	.right{
 		padding: 100px 40px;
 	}
-  
+
 }
 
 
