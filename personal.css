@@ -11,7 +11,7 @@ html, body {
 /* to show the canvas bounds and remove scrollbars caused by it, if applicable */
 canvas {
 	display:block;
-	background: linear-gradient(to bottom right, black, gray);
+	background: linear-gradient(to bottom right, #638592, gray);
 	position: fixed;
 	z-index: -1;
 	border: 0;
@@ -48,6 +48,10 @@ canvas {
 
 #Home{
 	top: 20px;
+}
+
+#welcome{
+	top: 500px;
 }
 
 #Education{
@@ -110,18 +114,18 @@ canvas {
 
 .left{
 	float: left;
-	width: 30%;
+	width: 50%;
 	background:inherit;
-	padding: 40px;
+	padding: 200px;
 	text-align: center;
 	color: white;
 }
 
 .right{
 	float: left;
-	width: 70%;
+	width: 50%;
 	background:inherit;
-	padding: 60px 40px;
+	padding: 300px 40px;
 	color: white;
 }
 
